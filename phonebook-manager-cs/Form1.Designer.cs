@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(SplashScreen));
             this.label1 = new System.Windows.Forms.Label();
             this.Welcome = new System.Windows.Forms.Label();
@@ -36,6 +37,8 @@
             this.Ssubtitle = new System.Windows.Forms.Label();
             this.AvailableOn = new System.Windows.Forms.Label();
             this.GitHub = new System.Windows.Forms.LinkLabel();
+            this.progressBar1 = new System.Windows.Forms.ProgressBar();
+            this.timer1 = new System.Windows.Forms.Timer(this.components);
             this.SuspendLayout();
             // 
             // label1
@@ -87,7 +90,7 @@
             this.Ssubtitle.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F);
             this.Ssubtitle.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(64)))), ((int)(((byte)(0)))));
             this.Ssubtitle.ImageAlign = System.Drawing.ContentAlignment.BottomCenter;
-            this.Ssubtitle.Location = new System.Drawing.Point(431, 311);
+            this.Ssubtitle.Location = new System.Drawing.Point(394, 312);
             this.Ssubtitle.Name = "Ssubtitle";
             this.Ssubtitle.Size = new System.Drawing.Size(365, 25);
             this.Ssubtitle.TabIndex = 1;
@@ -101,7 +104,7 @@
             this.AvailableOn.BackColor = System.Drawing.Color.Transparent;
             this.AvailableOn.Font = new System.Drawing.Font("Palatino Linotype", 15.75F);
             this.AvailableOn.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(64)))), ((int)(((byte)(0)))));
-            this.AvailableOn.Location = new System.Drawing.Point(562, 354);
+            this.AvailableOn.Location = new System.Drawing.Point(548, 354);
             this.AvailableOn.Name = "AvailableOn";
             this.AvailableOn.Size = new System.Drawing.Size(136, 28);
             this.AvailableOn.TabIndex = 3;
@@ -115,12 +118,28 @@
             this.GitHub.Font = new System.Drawing.Font("Palatino Linotype", 15.75F, System.Drawing.FontStyle.Italic);
             this.GitHub.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(64)))), ((int)(((byte)(0)))));
             this.GitHub.LinkColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(64)))), ((int)(((byte)(0)))));
-            this.GitHub.Location = new System.Drawing.Point(690, 354);
+            this.GitHub.Location = new System.Drawing.Point(680, 354);
             this.GitHub.Name = "GitHub";
             this.GitHub.Size = new System.Drawing.Size(79, 28);
             this.GitHub.TabIndex = 2;
             this.GitHub.TabStop = true;
             this.GitHub.Text = "GitHub";
+            // 
+            // progressBar1
+            // 
+            this.progressBar1.BackColor = System.Drawing.Color.WhiteSmoke;
+            this.progressBar1.Location = new System.Drawing.Point(192, 430);
+            this.progressBar1.Name = "progressBar1";
+            this.progressBar1.Size = new System.Drawing.Size(458, 10);
+            this.progressBar1.Step = 7;
+            this.progressBar1.Style = System.Windows.Forms.ProgressBarStyle.Continuous;
+            this.progressBar1.TabIndex = 4;
+            this.progressBar1.Click += new System.EventHandler(this.progressBar1_Click);
+            // 
+            // timer1
+            // 
+            this.timer1.Enabled = true;
+            this.timer1.Tick += new System.EventHandler(this.timer1_Tick_1);
             // 
             // SplashScreen
             // 
@@ -130,6 +149,7 @@
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.CausesValidation = false;
             this.ClientSize = new System.Drawing.Size(800, 520);
+            this.Controls.Add(this.progressBar1);
             this.Controls.Add(this.GitHub);
             this.Controls.Add(this.AvailableOn);
             this.Controls.Add(this.Ssubtitle);
@@ -143,6 +163,7 @@
             this.Name = "SplashScreen";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Phonebook Manager";
+            this.Load += new System.EventHandler(this.SplashScreen_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -157,6 +178,8 @@
         private System.Windows.Forms.Label AvailableOn;
         private System.Windows.Forms.LinkLabel GitHub;
         private System.Windows.Forms.Label Welcome;
+        private System.Windows.Forms.ProgressBar progressBar1;
+        public System.Windows.Forms.Timer timer1;
     }
 }
 
