@@ -40,11 +40,7 @@ namespace phonebook_manager_cs
             {
                 Application.ExitThread();
             }
-            else if (dialog == DialogResult.Cancel)
-            {
-                this.Show();
-
-            }
+            
         }
 
         private void button1_Click(object sender, EventArgs e)
