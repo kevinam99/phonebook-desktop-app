@@ -27,5 +27,32 @@ namespace phonebook_manager_cs
         {
             
         }
+
+        private void OptionsScreen_FormClosing_1(object sender, FormClosingEventArgs e)
+        {
+            DialogResult dialog = MessageBox.Show("Attention: The program will exit.", "Confirm exit", MessageBoxButtons.OKCancel);
+            if (dialog == DialogResult.OK)
+            {
+                Application.ExitThread();
+            }
+            else if (dialog == DialogResult.Cancel)
+            {
+                e.Cancel = true;
+            }
+        }
+
+        private void Exit_button4_Click(object sender, EventArgs e)
+        {
+            DialogResult dialog = MessageBox.Show("Attention: The program will exit.", "Confirm exit", MessageBoxButtons.OKCancel);
+            if (dialog == DialogResult.OK)
+            {
+                Application.ExitThread();
+            }
+            else if (dialog == DialogResult.Cancel)
+            {
+                this.Show();
+
+            }
+        }
     }
 }

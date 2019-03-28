@@ -105,6 +105,7 @@
             this.Exit_button4.TabIndex = 14;
             this.Exit_button4.Text = "Exit";
             this.Exit_button4.UseVisualStyleBackColor = false;
+            this.Exit_button4.Click += new System.EventHandler(this.Exit_button4_Click);
             // 
             // OptionsScreen
             // 
@@ -125,6 +126,7 @@
             this.Name = "OptionsScreen";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Phonebook Manager";
+            this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.OptionsScreen_FormClosing_1);
             this.Load += new System.EventHandler(this.OptionsScreen_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
