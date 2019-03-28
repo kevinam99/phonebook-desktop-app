@@ -59,6 +59,7 @@
             this.button1.TabIndex = 1;
             this.button1.Text = "Create a new contact";
             this.button1.UseVisualStyleBackColor = false;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
             // button2
             // 
@@ -114,6 +115,7 @@
             this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(503, 298);
+            this.ControlBox = false;
             this.Controls.Add(this.Exit_button4);
             this.Controls.Add(this.SourceCode_linkLabel1);
             this.Controls.Add(this.button3);
@@ -126,7 +128,6 @@
             this.Name = "OptionsScreen";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Phonebook Manager";
-            this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.OptionsScreen_FormClosing_1);
             this.Load += new System.EventHandler(this.OptionsScreen_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
