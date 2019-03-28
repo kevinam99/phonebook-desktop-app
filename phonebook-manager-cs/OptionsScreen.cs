@@ -46,7 +46,8 @@ namespace phonebook_manager_cs
         private void button1_Click(object sender, EventArgs e)
         {
             this.Hide();
-            new Create_Contact().Show();
+            new Create_Contact().ShowDialog();
+            //new Create_Contact().Close();
         }
     }
 }
