@@ -38,6 +38,7 @@
             this.textBox3 = new System.Windows.Forms.TextBox();
             this.Save_button1 = new System.Windows.Forms.Button();
             this.Exit_button1 = new System.Windows.Forms.Button();
+            this.SourceCode_linkLabel1 = new System.Windows.Forms.LinkLabel();
             this.SuspendLayout();
             // 
             // CreateContactHeader_label1
@@ -136,6 +137,20 @@
             this.Exit_button1.UseVisualStyleBackColor = true;
             this.Exit_button1.Click += new System.EventHandler(this.Exit_button1_Click);
             // 
+            // SourceCode_linkLabel1
+            // 
+            this.SourceCode_linkLabel1.AutoSize = true;
+            this.SourceCode_linkLabel1.BackColor = System.Drawing.Color.Transparent;
+            this.SourceCode_linkLabel1.Font = new System.Drawing.Font("Consolas", 9.75F);
+            this.SourceCode_linkLabel1.LinkBehavior = System.Windows.Forms.LinkBehavior.AlwaysUnderline;
+            this.SourceCode_linkLabel1.Location = new System.Drawing.Point(439, 287);
+            this.SourceCode_linkLabel1.Name = "SourceCode_linkLabel1";
+            this.SourceCode_linkLabel1.Size = new System.Drawing.Size(84, 15);
+            this.SourceCode_linkLabel1.TabIndex = 23;
+            this.SourceCode_linkLabel1.TabStop = true;
+            this.SourceCode_linkLabel1.Text = "Source code";
+            this.SourceCode_linkLabel1.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.SourceCode_linkLabel1_LinkClicked);
+            // 
             // Create_Contact
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -144,6 +159,7 @@
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.CancelButton = this.Exit_button1;
             this.ClientSize = new System.Drawing.Size(569, 311);
+            this.Controls.Add(this.SourceCode_linkLabel1);
             this.Controls.Add(this.Exit_button1);
             this.Controls.Add(this.Save_button1);
             this.Controls.Add(this.textBox3);
@@ -176,5 +192,6 @@
         private System.Windows.Forms.TextBox textBox3;
         private System.Windows.Forms.Button Save_button1;
         private System.Windows.Forms.Button Exit_button1;
+        private System.Windows.Forms.LinkLabel SourceCode_linkLabel1;
     }
 }

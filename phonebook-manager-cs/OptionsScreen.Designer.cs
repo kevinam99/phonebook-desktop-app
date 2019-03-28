@@ -95,6 +95,7 @@
             this.SourceCode_linkLabel1.TabIndex = 22;
             this.SourceCode_linkLabel1.TabStop = true;
             this.SourceCode_linkLabel1.Text = "Source code";
+            this.SourceCode_linkLabel1.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.SourceCode_linkLabel1_LinkClicked);
             // 
             // Exit_button4
             // 

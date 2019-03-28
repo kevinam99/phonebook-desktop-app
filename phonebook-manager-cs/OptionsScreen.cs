@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
+using System.Diagnostics;
 using System.Drawing;
 using System.Linq;
 using System.Text;
@@ -47,7 +48,11 @@ namespace phonebook_manager_cs
         {
             this.Hide();
             new Create_Contact().ShowDialog();
-            //new Create_Contact().Close();
+        }
+
+        private void SourceCode_linkLabel1_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
+        {
+            Process.Start("https://github.com/kevinam99/phonebook-manager-csharp");
         }
     }
 }
