@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Diagnostics;
 using System.Windows.Forms;
 
 namespace phonebook_manager_cs
@@ -65,6 +66,9 @@ namespace phonebook_manager_cs
             }
         }
 
-        
+        private void GitHub_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
+        {
+            Process.Start("https://github.com/kevinam99/phonebook-manager-csharp");
+        }
     }
 }

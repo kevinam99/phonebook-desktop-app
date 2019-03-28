@@ -106,9 +106,9 @@
             this.AvailableOn.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(64)))), ((int)(((byte)(0)))));
             this.AvailableOn.Location = new System.Drawing.Point(548, 354);
             this.AvailableOn.Name = "AvailableOn";
-            this.AvailableOn.Size = new System.Drawing.Size(136, 28);
+            this.AvailableOn.Size = new System.Drawing.Size(131, 28);
             this.AvailableOn.TabIndex = 3;
-            this.AvailableOn.Text = "Available on ";
+            this.AvailableOn.Text = "Available on";
             // 
             // GitHub
             // 
@@ -124,6 +124,7 @@
             this.GitHub.TabIndex = 2;
             this.GitHub.TabStop = true;
             this.GitHub.Text = "GitHub";
+            this.GitHub.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.GitHub_LinkClicked);
             // 
             // progressBar1
             // 
