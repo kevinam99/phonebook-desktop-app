@@ -126,6 +126,7 @@
             // 
             // Exit_button1
             // 
+            this.Exit_button1.DialogResult = System.Windows.Forms.DialogResult.Cancel;
             this.Exit_button1.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F);
             this.Exit_button1.Location = new System.Drawing.Point(330, 242);
             this.Exit_button1.Name = "Exit_button1";
@@ -133,6 +134,7 @@
             this.Exit_button1.TabIndex = 9;
             this.Exit_button1.Text = "Exit";
             this.Exit_button1.UseVisualStyleBackColor = true;
+            this.Exit_button1.Click += new System.EventHandler(this.Exit_button1_Click);
             // 
             // Create_Contact
             // 
@@ -140,6 +142,7 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.CancelButton = this.Exit_button1;
             this.ClientSize = new System.Drawing.Size(569, 311);
             this.Controls.Add(this.Exit_button1);
             this.Controls.Add(this.Save_button1);
@@ -156,6 +159,7 @@
             this.Name = "Create_Contact";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Phonebook Manager";
+            this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.Create_Contact_FormClosing_Click);
             this.ResumeLayout(false);
             this.PerformLayout();
 
