@@ -24,16 +24,6 @@ namespace phonebook_manager_cs
 
         }
 
-        private void OptionsScreen_FormClosing(object sender, FormClosingEventArgs e)
-        {
-            
-        }
-
-        private void OptionsScreen_FormClosing_1(object sender, FormClosingEventArgs e)
-        {
-
-        }
-
         private void Exit_button4_Click(object sender, EventArgs e)
         {
             DialogResult dialog = MessageBox.Show("Attention: The program will exit.", "Confirm exit", MessageBoxButtons.OKCancel);
@@ -53,6 +43,20 @@ namespace phonebook_manager_cs
         private void SourceCode_linkLabel1_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
         {
             Process.Start("https://github.com/kevinam99/phonebook-manager-csharp");
+        }
+
+        private void OptionsScreen_FormClosing(object sender, FormClosingEventArgs e)
+        {
+            DialogResult dialog = MessageBox.Show("Attention: The program will exit.", "Confirm exit", MessageBoxButtons.OKCancel);
+            if (dialog == DialogResult.OK)
+            {
+                // Application.ExitThread();
+                this.Dispose();
+            }
+            else if (dialog == DialogResult.Cancel)
+            {
+                e.Cancel = true;
+            }
         }
     }
 }

@@ -100,6 +100,7 @@
             // Exit_button4
             // 
             this.Exit_button4.BackColor = System.Drawing.Color.Transparent;
+            this.Exit_button4.DialogResult = System.Windows.Forms.DialogResult.Cancel;
             this.Exit_button4.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F);
             this.Exit_button4.Location = new System.Drawing.Point(302, 260);
             this.Exit_button4.Name = "Exit_button4";
@@ -116,7 +117,6 @@
             this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(503, 298);
-            this.ControlBox = false;
             this.Controls.Add(this.Exit_button4);
             this.Controls.Add(this.SourceCode_linkLabel1);
             this.Controls.Add(this.button3);
@@ -129,6 +129,7 @@
             this.Name = "OptionsScreen";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Phonebook Manager";
+            this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.OptionsScreen_FormClosing);
             this.Load += new System.EventHandler(this.OptionsScreen_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
