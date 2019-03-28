@@ -56,7 +56,7 @@ namespace phonebook_manager_cs
                 timer1.Enabled = false;
                 // Close current form while keeping the other form open
                 this.Hide();
-                new OptionsScreen().ShowDialog();
+                new OptionsScreen().ShowDialog(); // Runs until this form is closed.
                 this.Close();
                 
           //      new OptionsScreen().Show();
