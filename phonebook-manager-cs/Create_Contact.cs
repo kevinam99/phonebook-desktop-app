@@ -19,19 +19,15 @@ namespace phonebook_manager_cs
 
         private void Exit_button1_Click(object sender, EventArgs e)
         {
-            DialogResult dialog = MessageBox.Show("You wilexitl be directed to the main menu.", "Confirm exit", MessageBoxButtons.OKCancel);
+            DialogResult dialog = MessageBox.Show("You will be directed to the main menu.", "Confirm exit", MessageBoxButtons.OKCancel);
             if (dialog == DialogResult.OK)
             {
-                
-                new OptionsScreen().Show();
-                this.Close();
-
+                // Application.ExitThread();
+                this.Dispose();
+                new OptionsScreen().ShowDialog();
+               // this.Dispose();
             }
-            else if (dialog == DialogResult.Cancel)
-            {
-                this.Show();
-
-            }
+            
         }
 
         private void Create_Contact_FormClosing_Click(object sender, FormClosingEventArgs e)
@@ -39,14 +35,14 @@ namespace phonebook_manager_cs
             DialogResult dialog = MessageBox.Show("You will be directed to the main menu.", "Confirm exit", MessageBoxButtons.OKCancel);
             if (dialog == DialogResult.OK)
             {
-                new OptionsScreen().Show();
-                this.Close();
-                //Application.ExitThread();
+                // Application.ExitThread();
+                this.Dispose();
+                new OptionsScreen().ShowDialog();
+             //   this.Dispose();
             }
             else if (dialog == DialogResult.Cancel)
             {
-                e.Cancel = false;
-
+                e.Cancel = true;
             }
         }
     }
