@@ -54,8 +54,10 @@ namespace phonebook_manager_cs
             if (progressBar1.Value == 100)
             {             
                 timer1.Enabled = false;
-               // this.Close();
-               // new OptionsScreen().ShowDialog();
+                // Close current form while keeping the other form open
+                this.Hide();
+                new OptionsScreen().ShowDialog();
+                this.Close();
                 
           //      new OptionsScreen().Show();
             //    this.Hide();
