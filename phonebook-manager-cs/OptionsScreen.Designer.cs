@@ -34,6 +34,7 @@
             this.button2 = new System.Windows.Forms.Button();
             this.button3 = new System.Windows.Forms.Button();
             this.SourceCode_linkLabel1 = new System.Windows.Forms.LinkLabel();
+            this.Exit_button4 = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // label1
@@ -94,6 +95,17 @@
             this.SourceCode_linkLabel1.TabStop = true;
             this.SourceCode_linkLabel1.Text = "Source code";
             // 
+            // Exit_button4
+            // 
+            this.Exit_button4.BackColor = System.Drawing.Color.Transparent;
+            this.Exit_button4.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F);
+            this.Exit_button4.Location = new System.Drawing.Point(302, 260);
+            this.Exit_button4.Name = "Exit_button4";
+            this.Exit_button4.Size = new System.Drawing.Size(77, 28);
+            this.Exit_button4.TabIndex = 14;
+            this.Exit_button4.Text = "Exit";
+            this.Exit_button4.UseVisualStyleBackColor = false;
+            // 
             // OptionsScreen
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -101,6 +113,7 @@
             this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(503, 298);
+            this.Controls.Add(this.Exit_button4);
             this.Controls.Add(this.SourceCode_linkLabel1);
             this.Controls.Add(this.button3);
             this.Controls.Add(this.button2);
@@ -125,5 +138,6 @@
         private System.Windows.Forms.Button button2;
         private System.Windows.Forms.Button button3;
         private System.Windows.Forms.LinkLabel SourceCode_linkLabel1;
+        private System.Windows.Forms.Button Exit_button4;
     }
 }
