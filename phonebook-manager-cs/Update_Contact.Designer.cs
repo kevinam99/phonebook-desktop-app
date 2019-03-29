@@ -144,9 +144,9 @@
             this.CreateContactHeader_label1.Font = new System.Drawing.Font("Palatino Linotype", 20.25F);
             this.CreateContactHeader_label1.Location = new System.Drawing.Point(165, 9);
             this.CreateContactHeader_label1.Name = "CreateContactHeader_label1";
-            this.CreateContactHeader_label1.Size = new System.Drawing.Size(256, 36);
+            this.CreateContactHeader_label1.Size = new System.Drawing.Size(211, 36);
             this.CreateContactHeader_label1.TabIndex = 24;
-            this.CreateContactHeader_label1.Text = "Create a new contact";
+            this.CreateContactHeader_label1.Text = "Update a contact";
             // 
             // Update_Contact
             // 
