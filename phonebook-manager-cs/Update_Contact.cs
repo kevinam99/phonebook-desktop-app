@@ -24,18 +24,8 @@ namespace phonebook_manager_cs
 
         private void Exit_button1_Click(object sender, EventArgs e)
         {
-            DialogResult dialog = MessageBox.Show("You will be directed to the main menu.", "Confirm exit", MessageBoxButtons.OKCancel);
-            if (dialog == DialogResult.OK)
-            {
-                // Application.ExitThread();
-                this.Dispose();
-                new OptionsScreen().ShowDialog();
-                // this.Dispose();
-            }
-            else if (dialog == DialogResult.Cancel)
-            {
-                
-            }
+            this.Hide();
+            new Search_Contact().ShowDialog();
         }
 
         private void Update_Contact_FormClosing(object sender, FormClosingEventArgs e)
