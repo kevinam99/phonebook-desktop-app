@@ -55,5 +55,11 @@ namespace phonebook_manager_cs
             Process.Start("https://github.com/kevinam99/phonebook-manager-csharp");
 
         }
+
+        private void Update_button1_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            new Update_Contact().ShowDialog();
+        }
     }
 }

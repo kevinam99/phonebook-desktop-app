@@ -30,7 +30,7 @@
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Search_Contact));
             this.SearchHeader_label1 = new System.Windows.Forms.Label();
-            this.Exit_button1 = new System.Windows.Forms.Button();
+            this.Update_button1 = new System.Windows.Forms.Button();
             this.Search_button1 = new System.Windows.Forms.Button();
             this.textBox1 = new System.Windows.Forms.TextBox();
             this.CreateName_label1 = new System.Windows.Forms.Label();
@@ -50,16 +50,17 @@
             this.SearchHeader_label1.Text = "Search and update a contact";
             this.SearchHeader_label1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
-            // Exit_button1
+            // Update_button1
             // 
-            this.Exit_button1.DialogResult = System.Windows.Forms.DialogResult.Cancel;
-            this.Exit_button1.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F);
-            this.Exit_button1.Location = new System.Drawing.Point(250, 184);
-            this.Exit_button1.Name = "Exit_button1";
-            this.Exit_button1.Size = new System.Drawing.Size(149, 33);
-            this.Exit_button1.TabIndex = 15;
-            this.Exit_button1.Text = "Search and update";
-            this.Exit_button1.UseVisualStyleBackColor = true;
+            this.Update_button1.DialogResult = System.Windows.Forms.DialogResult.Cancel;
+            this.Update_button1.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F);
+            this.Update_button1.Location = new System.Drawing.Point(250, 184);
+            this.Update_button1.Name = "Update_button1";
+            this.Update_button1.Size = new System.Drawing.Size(149, 33);
+            this.Update_button1.TabIndex = 15;
+            this.Update_button1.Text = "Search and update";
+            this.Update_button1.UseVisualStyleBackColor = true;
+            this.Update_button1.Click += new System.EventHandler(this.Update_button1_Click);
             // 
             // Search_button1
             // 
@@ -125,7 +126,7 @@
             this.ClientSize = new System.Drawing.Size(623, 342);
             this.Controls.Add(this.SourceCode_linkLabel1);
             this.Controls.Add(this.Exit_button2);
-            this.Controls.Add(this.Exit_button1);
+            this.Controls.Add(this.Update_button1);
             this.Controls.Add(this.Search_button1);
             this.Controls.Add(this.textBox1);
             this.Controls.Add(this.CreateName_label1);
@@ -145,7 +146,7 @@
         #endregion
 
         private System.Windows.Forms.Label SearchHeader_label1;
-        private System.Windows.Forms.Button Exit_button1;
+        private System.Windows.Forms.Button Update_button1;
         private System.Windows.Forms.Button Search_button1;
         private System.Windows.Forms.TextBox textBox1;
         private System.Windows.Forms.Label CreateName_label1;
