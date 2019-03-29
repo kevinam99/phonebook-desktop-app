@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Update_Contact));
             this.SourceCode_linkLabel1 = new System.Windows.Forms.LinkLabel();
             this.Exit_button1 = new System.Windows.Forms.Button();
             this.Save_button1 = new System.Windows.Forms.Button();
@@ -76,7 +77,6 @@
             // 
             // textBox3
             // 
-            this.textBox3.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.textBox3.Font = new System.Drawing.Font("Century Gothic", 11.25F);
             this.textBox3.Location = new System.Drawing.Point(241, 180);
             this.textBox3.Multiline = true;
@@ -86,7 +86,6 @@
             // 
             // textBox2
             // 
-            this.textBox2.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.textBox2.Font = new System.Drawing.Font("Century Gothic", 11.25F);
             this.textBox2.Location = new System.Drawing.Point(241, 124);
             this.textBox2.Multiline = true;
@@ -118,7 +117,6 @@
             // 
             // textBox1
             // 
-            this.textBox1.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.textBox1.Font = new System.Drawing.Font("Century Gothic", 11.25F);
             this.textBox1.Location = new System.Drawing.Point(241, 61);
             this.textBox1.Multiline = true;
@@ -152,6 +150,8 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
+            this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(566, 310);
             this.Controls.Add(this.SourceCode_linkLabel1);
             this.Controls.Add(this.Exit_button1);
@@ -163,8 +163,10 @@
             this.Controls.Add(this.textBox1);
             this.Controls.Add(this.CreateName_label1);
             this.Controls.Add(this.CreateContactHeader_label1);
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "Update_Contact";
-            this.Text = "Update_Contact";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
+            this.Text = "Phonebook Manager";
             this.ResumeLayout(false);
             this.PerformLayout();
 
