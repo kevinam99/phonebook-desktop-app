@@ -65,7 +65,6 @@
             // 
             // textBox1
             // 
-            this.textBox1.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.textBox1.Font = new System.Drawing.Font("Century Gothic", 11.25F);
             this.textBox1.Location = new System.Drawing.Point(240, 61);
             this.textBox1.Multiline = true;
@@ -97,7 +96,6 @@
             // 
             // textBox2
             // 
-            this.textBox2.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.textBox2.Font = new System.Drawing.Font("Century Gothic", 11.25F);
             this.textBox2.Location = new System.Drawing.Point(240, 124);
             this.textBox2.Multiline = true;
@@ -107,7 +105,6 @@
             // 
             // textBox3
             // 
-            this.textBox3.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.textBox3.Font = new System.Drawing.Font("Century Gothic", 11.25F);
             this.textBox3.Location = new System.Drawing.Point(240, 180);
             this.textBox3.Multiline = true;
