@@ -24,7 +24,7 @@ namespace phonebook_manager_cs
 
         private void Exit_button1_Click(object sender, EventArgs e)
         {
-            this.Hide();
+            this.Dispose();
             new Search_Contact().ShowDialog();
         }
 
