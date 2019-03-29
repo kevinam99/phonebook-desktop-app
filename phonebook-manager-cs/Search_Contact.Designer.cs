@@ -100,6 +100,7 @@
             this.Exit_button2.TabIndex = 13;
             this.Exit_button2.Text = "Exit";
             this.Exit_button2.UseVisualStyleBackColor = true;
+            this.Exit_button2.Click += new System.EventHandler(this.Exit_button2_Click);
             // 
             // SourceCode_linkLabel1
             // 
@@ -113,6 +114,7 @@
             this.SourceCode_linkLabel1.TabIndex = 24;
             this.SourceCode_linkLabel1.TabStop = true;
             this.SourceCode_linkLabel1.Text = "Source code";
+            this.SourceCode_linkLabel1.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.SourceCode_linkLabel1_LinkClicked);
             // 
             // Search_Contact
             // 
@@ -134,6 +136,7 @@
             this.Name = "Search_Contact";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Phonebook Manager";
+            this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.Search_Contact_FormClosing);
             this.ResumeLayout(false);
             this.PerformLayout();
 
