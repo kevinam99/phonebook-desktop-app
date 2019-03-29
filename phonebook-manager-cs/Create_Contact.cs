@@ -30,10 +30,10 @@ namespace phonebook_manager_cs
             }
             else if (dialog == DialogResult.Cancel)
             {
-                //this.Hide();
-                this.Show();
+                
             }
         }
+
 
         private void Create_Contact_FormClosing_Click(object sender, FormClosingEventArgs e)
         {
