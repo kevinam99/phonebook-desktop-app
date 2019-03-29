@@ -58,5 +58,11 @@ namespace phonebook_manager_cs
                 e.Cancel = true;
             }
         }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            new Search_Contact().ShowDialog();
+        }
     }
 }
