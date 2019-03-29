@@ -34,7 +34,7 @@ namespace phonebook_manager_cs
             }
             else if (dialog == DialogResult.Cancel)
             {
-
+                
             }
         }
 
