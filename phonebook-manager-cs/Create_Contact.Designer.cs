@@ -172,7 +172,7 @@
             this.Name = "Create_Contact";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Phonebook Manager";
-            this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.Create_Contact_FormClosing_Click);
+            this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.Create_Contact_FormClosing);
             this.ResumeLayout(false);
             this.PerformLayout();
 
