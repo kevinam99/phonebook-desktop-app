@@ -46,7 +46,7 @@ namespace phonebook_manager_cs
 
         private void SourceCode_linkLabel1_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
         {
-//            Process.Start("https://github.com/kevinam99/phonebook-manager-csharp");
+            Process.Start("https://github.com/kevinam99/phonebook-manager-csharp");
 
         }
     }
