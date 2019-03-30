@@ -35,7 +35,7 @@ namespace phonebook_manager_cs
         }
 
 
-        private void Create_Contact_FormClosing_Click(object sender, FormClosingEventArgs e)
+        private void Create_Contact_FormClosing(object sender, FormClosingEventArgs e)
         {
             DialogResult dialog = MessageBox.Show("You will be directed to the main menu.", "Confirm exit", MessageBoxButtons.OKCancel);
             if (dialog == DialogResult.OK)
