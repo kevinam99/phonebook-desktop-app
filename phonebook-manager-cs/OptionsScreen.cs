@@ -64,5 +64,11 @@ namespace phonebook_manager_cs
             this.Hide();
             new Search_Contact().ShowDialog();
         }
+
+        private void button3_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            new Delete_Contact().ShowDialog();
+        }
     }
 }
