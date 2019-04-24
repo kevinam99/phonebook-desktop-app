@@ -48,6 +48,11 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="contacts.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>contacts.xsd</DependentUpon>
+    </Compile>
     <Compile Include="Create_Contact.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -113,6 +118,17 @@
     <EmbeddedResource Include="Update_Contact.resx">
       <DependentUpon>Update_Contact.cs</DependentUpon>
     </EmbeddedResource>
+    <None Include="contacts.xsc">
+      <DependentUpon>contacts.xsd</DependentUpon>
+    </None>
+    <None Include="contacts.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>contacts.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="contacts.xss">
+      <DependentUpon>contacts.xsd</DependentUpon>
+    </None>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>

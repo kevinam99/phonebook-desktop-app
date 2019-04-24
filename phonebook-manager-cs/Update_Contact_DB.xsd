@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<xs:schema id="contacts" targetNamespace="http://tempuri.org/contacts.xsd" xmlns:mstns="http://tempuri.org/contacts.xsd" xmlns="http://tempuri.org/contacts.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+<xs:schema id="Update_Contact_DB" targetNamespace="http://tempuri.org/Update_Contact_DB.xsd" xmlns:mstns="http://tempuri.org/Update_Contact_DB.xsd" xmlns="http://tempuri.org/Update_Contact_DB.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
   <xs:annotation>
     <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
       <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
@@ -40,7 +40,7 @@
       </DataSource>
     </xs:appinfo>
   </xs:annotation>
-  <xs:element name="contacts" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:EnableTableAdapterManager="True" msprop:Generator_DataSetName="contacts" msprop:Generator_UserDSName="contacts">
+  <xs:element name="Update_Contact_DB" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:EnableTableAdapterManager="True" msprop:Generator_DataSetName="Update_Contact_DB" msprop:Generator_UserDSName="Update_Contact_DB">
     <xs:complexType>
       <xs:choice minOccurs="0" maxOccurs="unbounded">
         <xs:element name="CONTACTS" msprop:Generator_TableClassName="CONTACTSDataTable" msprop:Generator_TableVarName="tableCONTACTS" msprop:Generator_TablePropName="CONTACTS" msprop:Generator_RowDeletingName="CONTACTSRowDeleting" msprop:Generator_RowChangingName="CONTACTSRowChanging" msprop:Generator_RowEvHandlerName="CONTACTSRowChangeEventHandler" msprop:Generator_RowDeletedName="CONTACTSRowDeleted" msprop:Generator_UserTableName="CONTACTS" msprop:Generator_RowChangedName="CONTACTSRowChanged" msprop:Generator_RowEvArgName="CONTACTSRowChangeEvent" msprop:Generator_RowClassName="CONTACTSRow">

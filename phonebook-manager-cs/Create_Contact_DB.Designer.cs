@@ -20,9 +20,9 @@ namespace phonebook_manager_cs {
     [global::System.ComponentModel.DesignerCategoryAttribute("code")]
     [global::System.ComponentModel.ToolboxItem(true)]
     [global::System.Xml.Serialization.XmlSchemaProviderAttribute("GetTypedDataSetSchema")]
-    [global::System.Xml.Serialization.XmlRootAttribute("contacts")]
+    [global::System.Xml.Serialization.XmlRootAttribute("Create_Contact_DB")]
     [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.DataSet")]
-    public partial class contacts : global::System.Data.DataSet {
+    public partial class Create_Contact_DB : global::System.Data.DataSet {
         
         private CONTACTSDataTable tableCONTACTS;
         
@@ -30,7 +30,7 @@ namespace phonebook_manager_cs {
         
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")]
-        public contacts() {
+        public Create_Contact_DB() {
             this.BeginInit();
             this.InitClass();
             global::System.ComponentModel.CollectionChangeEventHandler schemaChangedHandler = new global::System.ComponentModel.CollectionChangeEventHandler(this.SchemaChanged);
@@ -41,7 +41,7 @@ namespace phonebook_manager_cs {
         
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")]
-        protected contacts(global::System.Runtime.Serialization.SerializationInfo info, global::System.Runtime.Serialization.StreamingContext context) : 
+        protected Create_Contact_DB(global::System.Runtime.Serialization.SerializationInfo info, global::System.Runtime.Serialization.StreamingContext context) : 
                 base(info, context, false) {
             if ((this.IsBinarySerialized(info, context) == true)) {
                 this.InitVars(false);
@@ -127,7 +127,7 @@ namespace phonebook_manager_cs {
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")]
         public override global::System.Data.DataSet Clone() {
-            contacts cln = ((contacts)(base.Clone()));
+            Create_Contact_DB cln = ((Create_Contact_DB)(base.Clone()));
             cln.InitVars();
             cln.SchemaSerializationMode = this.SchemaSerializationMode;
             return cln;
@@ -199,9 +199,9 @@ namespace phonebook_manager_cs {
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")]
         private void InitClass() {
-            this.DataSetName = "contacts";
+            this.DataSetName = "Create_Contact_DB";
             this.Prefix = "";
-            this.Namespace = "http://tempuri.org/contacts.xsd";
+            this.Namespace = "http://tempuri.org/Create_Contact_DB.xsd";
             this.EnforceConstraints = true;
             this.SchemaSerializationMode = global::System.Data.SchemaSerializationMode.IncludeSchema;
             this.tableCONTACTS = new CONTACTSDataTable();
@@ -225,7 +225,7 @@ namespace phonebook_manager_cs {
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")]
         public static global::System.Xml.Schema.XmlSchemaComplexType GetTypedDataSetSchema(global::System.Xml.Schema.XmlSchemaSet xs) {
-            contacts ds = new contacts();
+            Create_Contact_DB ds = new Create_Contact_DB();
             global::System.Xml.Schema.XmlSchemaComplexType type = new global::System.Xml.Schema.XmlSchemaComplexType();
             global::System.Xml.Schema.XmlSchemaSequence sequence = new global::System.Xml.Schema.XmlSchemaSequence();
             global::System.Xml.Schema.XmlSchemaAny any = new global::System.Xml.Schema.XmlSchemaAny();
@@ -491,7 +491,7 @@ namespace phonebook_manager_cs {
             public static global::System.Xml.Schema.XmlSchemaComplexType GetTypedTableSchema(global::System.Xml.Schema.XmlSchemaSet xs) {
                 global::System.Xml.Schema.XmlSchemaComplexType type = new global::System.Xml.Schema.XmlSchemaComplexType();
                 global::System.Xml.Schema.XmlSchemaSequence sequence = new global::System.Xml.Schema.XmlSchemaSequence();
-                contacts ds = new contacts();
+                Create_Contact_DB ds = new Create_Contact_DB();
                 global::System.Xml.Schema.XmlSchemaAny any1 = new global::System.Xml.Schema.XmlSchemaAny();
                 any1.Namespace = "http://www.w3.org/2001/XMLSchema";
                 any1.MinOccurs = new decimal(0);
@@ -650,7 +650,7 @@ namespace phonebook_manager_cs {
         }
     }
 }
-namespace phonebook_manager_cs.contactsTableAdapters {
+namespace phonebook_manager_cs.Create_Contact_DBTableAdapters {
     
     
     /// <summary>
@@ -829,7 +829,7 @@ namespace phonebook_manager_cs.contactsTableAdapters {
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
         [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Fill, true)]
-        public virtual int Fill(contacts.CONTACTSDataTable dataTable) {
+        public virtual int Fill(Create_Contact_DB.CONTACTSDataTable dataTable) {
             this.Adapter.SelectCommand = this.CommandCollection[0];
             if ((this.ClearBeforeFill == true)) {
                 dataTable.Clear();
@@ -842,9 +842,9 @@ namespace phonebook_manager_cs.contactsTableAdapters {
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
         [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Select, true)]
-        public virtual contacts.CONTACTSDataTable GetData() {
+        public virtual Create_Contact_DB.CONTACTSDataTable GetData() {
             this.Adapter.SelectCommand = this.CommandCollection[0];
-            contacts.CONTACTSDataTable dataTable = new contacts.CONTACTSDataTable();
+            Create_Contact_DB.CONTACTSDataTable dataTable = new Create_Contact_DB.CONTACTSDataTable();
             this.Adapter.Fill(dataTable);
             return dataTable;
         }
@@ -852,14 +852,14 @@ namespace phonebook_manager_cs.contactsTableAdapters {
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
-        public virtual int Update(contacts.CONTACTSDataTable dataTable) {
+        public virtual int Update(Create_Contact_DB.CONTACTSDataTable dataTable) {
             return this.Adapter.Update(dataTable);
         }
         
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
-        public virtual int Update(contacts dataSet) {
+        public virtual int Update(Create_Contact_DB dataSet) {
             return this.Adapter.Update(dataSet, "CONTACTS");
         }
         
@@ -1004,7 +1004,7 @@ namespace phonebook_manager_cs.contactsTableAdapters {
         ///</summary>
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")]
-        private int UpdateUpdatedRows(contacts dataSet, global::System.Collections.Generic.List<global::System.Data.DataRow> allChangedRows, global::System.Collections.Generic.List<global::System.Data.DataRow> allAddedRows) {
+        private int UpdateUpdatedRows(Create_Contact_DB dataSet, global::System.Collections.Generic.List<global::System.Data.DataRow> allChangedRows, global::System.Collections.Generic.List<global::System.Data.DataRow> allAddedRows) {
             int result = 0;
             if ((this._cONTACTSTableAdapter != null)) {
                 global::System.Data.DataRow[] updatedRows = dataSet.CONTACTS.Select(null, null, global::System.Data.DataViewRowState.ModifiedCurrent);
@@ -1023,7 +1023,7 @@ namespace phonebook_manager_cs.contactsTableAdapters {
         ///</summary>
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")]
-        private int UpdateInsertedRows(contacts dataSet, global::System.Collections.Generic.List<global::System.Data.DataRow> allAddedRows) {
+        private int UpdateInsertedRows(Create_Contact_DB dataSet, global::System.Collections.Generic.List<global::System.Data.DataRow> allAddedRows) {
             int result = 0;
             if ((this._cONTACTSTableAdapter != null)) {
                 global::System.Data.DataRow[] addedRows = dataSet.CONTACTS.Select(null, null, global::System.Data.DataViewRowState.Added);
@@ -1041,7 +1041,7 @@ namespace phonebook_manager_cs.contactsTableAdapters {
         ///</summary>
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")]
-        private int UpdateDeletedRows(contacts dataSet, global::System.Collections.Generic.List<global::System.Data.DataRow> allChangedRows) {
+        private int UpdateDeletedRows(Create_Contact_DB dataSet, global::System.Collections.Generic.List<global::System.Data.DataRow> allChangedRows) {
             int result = 0;
             if ((this._cONTACTSTableAdapter != null)) {
                 global::System.Data.DataRow[] deletedRows = dataSet.CONTACTS.Select(null, null, global::System.Data.DataViewRowState.Deleted);
@@ -1083,7 +1083,7 @@ namespace phonebook_manager_cs.contactsTableAdapters {
         ///</summary>
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")]
-        public virtual int UpdateAll(contacts dataSet) {
+        public virtual int UpdateAll(Create_Contact_DB dataSet) {
             if ((dataSet == null)) {
                 throw new global::System.ArgumentNullException("dataSet");
             }
