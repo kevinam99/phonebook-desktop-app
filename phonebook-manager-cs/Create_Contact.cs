@@ -14,12 +14,13 @@ namespace phonebook_manager_cs
 {
     public partial class Create_Contact : Form
     {
+        public static string ConnectionString = "DATA SOURCE=LAPTOP-UIK7JGOD:1522/XE;PASSWORD=password123;USER ID=PHONEBOOK";
+
         public Create_Contact()
         {
             InitializeComponent();
         }
 
-        public string ConnectionString = "DATA SOURCE=LAPTOP-UIK7JGOD:1522/XE;PASSWORD=password123;USER ID=PHONEBOOK";
         
         private void Exit_button1_Click(object sender, EventArgs e)
         {
@@ -69,14 +70,26 @@ namespace phonebook_manager_cs
                     string number = textBox2.Text;
                     string email = textBox3.Text;
 
-                    string sql = "INSERT INTO Contacts(Name, Contact_Number, Email) VALUES('" + name + "', '" + number + "' , '" + email + "') ";
-                    //Oracle connection
                     OracleConnection con = new OracleConnection(ConnectionString);
+                    OracleDataAdapter usersCount = new OracleDataAdapter("Select UserId from Contacts", con);
+                    DataTable dt = new DataTable();
+                    usersCount.Fill(dt);
+                    int userid = dt.Rows.Count;
+                    userid++;
+                    //con.Close();
+
+                    string sql = "INSERT INTO Contacts(Name, Contact_Number, Email, UserId) VALUES('" + name + "', '" + number + "' , '" + email + "' ,'"+userid+"') ";
+                    //Oracle connection
+                    
                     con.Open();
+
+                    
+
                     OracleCommand cmd = new OracleCommand(sql, con);
                     cmd.CommandType = CommandType.Text;
                     cmd.ExecuteNonQuery();
                     MessageBox.Show("Successfully added contact '" + name + "'");
+                   // con.Close();
                 }
                 else
                 {
