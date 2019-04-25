@@ -121,6 +121,7 @@
             this.Save_button1.TabIndex = 8;
             this.Save_button1.Text = "Save";
             this.Save_button1.UseVisualStyleBackColor = true;
+            this.Save_button1.Click += new System.EventHandler(this.Save_button1_Click);
             // 
             // Exit_button1
             // 
