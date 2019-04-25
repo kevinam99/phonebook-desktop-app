@@ -62,5 +62,17 @@ namespace phonebook_manager_cs
             this.Hide();
             new Update_Contact().ShowDialog();
         }
+
+        private void Search_Contact_Load(object sender, EventArgs e)
+        {
+            // TODO: This line of code loads data into the 'dataSet1.CONTACTS' table. You can move, or remove it, as needed.
+            this.cONTACTSTableAdapter.Fill(this.dataSet1.CONTACTS);
+
+        }
+
+        private void dataGridView1_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+
+        }
     }
 }
