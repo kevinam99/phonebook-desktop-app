@@ -67,7 +67,17 @@ namespace phonebook_manager_cs
                 if(!((textBox1.Text == "") && (textBox2.Text == "")))
                 {
                     string name = textBox1.Text;
-                    string number = textBox2.Text;
+                    int number;
+                    try
+                    {
+                        number = int.Parse(textBox2.Text);
+
+                    }
+                    catch(Exception exp)
+                    {
+                        MessageBox.Show("Invalid input. Please enter a number.");
+                        throw exp;
+                    }
                     string email = textBox3.Text;
 
                     OracleConnection con = new OracleConnection(ConnectionString);
@@ -78,7 +88,7 @@ namespace phonebook_manager_cs
                     userid++;
                     //con.Close();
 
-                    string sql = "INSERT INTO Contacts(Name, Contact_Number, Email, UserId) VALUES('" + name + "', '" + number + "' , '" + email + "' ,'"+userid+"') ";
+                    string sql = "INSERT INTO Contacts(Name, Contact_Number, Email, UserId) VALUES('" + name + "', " + number + " , '" + email + "' ,'"+userid+"') ";
                     //Oracle connection
                     
                     con.Open();
@@ -99,7 +109,7 @@ namespace phonebook_manager_cs
             catch(Exception ex)
             {
                 MessageBox.Show(ex.ToString());
-                throw ex;
+                //throw ex;
             }
         }
     }
