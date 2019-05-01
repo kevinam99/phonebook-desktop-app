@@ -95,7 +95,7 @@ namespace phonebook_manager_cs
             {
                 if(!string.IsNullOrEmpty(textBox1.Text))
                 {
-                    string sql = "SELECT * FROM Contacts WHERE Name='" + textBox1.Text + "'";
+                    string sql = "SELECT * FROM Contacts WHERE Name LIKE '%" + textBox1.Text + "%'";
                     OracleConnection con = new OracleConnection(ConnectionString);
                     con.Open();
                     OracleDataAdapter oda = new OracleDataAdapter(sql, con);
