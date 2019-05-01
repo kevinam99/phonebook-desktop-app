@@ -56,7 +56,7 @@ namespace phonebook_manager_cs
 
         private void SourceCode_linkLabel1_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
         {
-            Process.Start("https://github.com/kevinam99/phonebook-manager-csharp");
+            Process.Start("https://github.com/kevinam99/phonebook-desktop-app");
 
         }
 
@@ -112,25 +112,6 @@ namespace phonebook_manager_cs
                         dataGridView1.DataSource = dataTable;
                     }
                     con.Close();
-
-
-
-
-
-
-
-
-                    //OracleDataAdapter oda = new OracleDataAdapter("Select * from Contacts", con);
-                    //DataTable dt = new DataTable();
-                    //oda.Fill(dt);
-                    //con.Open();
-                    //OracleCommand cmd = new OracleCommand(sql, con);
-                    //cmd.CommandType = CommandType.Text;
-                    //cmd.ExecuteNonQuery();
-                    //dataGridView1.DataSource = sql.ToList();
-                    //dataGridView1.Refresh();
-
-                    //  MessageBox.Show("Successfully updated contact '" + name + "'");
                 }
             }
             catch(Exception ex)
