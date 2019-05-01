@@ -39,13 +39,13 @@
             this.Column2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Column1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.EMAIL = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.cONTACTSBindingSource = new System.Windows.Forms.BindingSource(this.components);
-            this.dataSet1 = new phonebook_manager_cs.DataSet1();
-            this.cONTACTSTableAdapter = new phonebook_manager_cs.DataSet1TableAdapters.CONTACTSTableAdapter();
             this.nAMEDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.cONTACTNUMBERDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.eMAILDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.uSERIDDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.cONTACTSBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.dataSet1 = new phonebook_manager_cs.DataSet1();
+            this.cONTACTSTableAdapter = new phonebook_manager_cs.DataSet1TableAdapters.CONTACTSTableAdapter();
             this.label1 = new System.Windows.Forms.Label();
             this.textBox1 = new System.Windows.Forms.TextBox();
             this.button1 = new System.Windows.Forms.Button();
@@ -71,7 +71,7 @@
             // 
             this.Update_button1.DialogResult = System.Windows.Forms.DialogResult.Cancel;
             this.Update_button1.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F);
-            this.Update_button1.Location = new System.Drawing.Point(239, 406);
+            this.Update_button1.Location = new System.Drawing.Point(272, 339);
             this.Update_button1.Name = "Update_button1";
             this.Update_button1.Size = new System.Drawing.Size(149, 33);
             this.Update_button1.TabIndex = 15;
@@ -82,7 +82,7 @@
             // Exit_button2
             // 
             this.Exit_button2.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F);
-            this.Exit_button2.Location = new System.Drawing.Point(405, 406);
+            this.Exit_button2.Location = new System.Drawing.Point(438, 339);
             this.Exit_button2.Name = "Exit_button2";
             this.Exit_button2.Size = new System.Drawing.Size(90, 33);
             this.Exit_button2.TabIndex = 13;
@@ -96,7 +96,7 @@
             this.SourceCode_linkLabel1.BackColor = System.Drawing.Color.Transparent;
             this.SourceCode_linkLabel1.Font = new System.Drawing.Font("Consolas", 9.75F);
             this.SourceCode_linkLabel1.LinkBehavior = System.Windows.Forms.LinkBehavior.AlwaysUnderline;
-            this.SourceCode_linkLabel1.Location = new System.Drawing.Point(516, 424);
+            this.SourceCode_linkLabel1.Location = new System.Drawing.Point(521, 384);
             this.SourceCode_linkLabel1.Name = "SourceCode_linkLabel1";
             this.SourceCode_linkLabel1.Size = new System.Drawing.Size(84, 15);
             this.SourceCode_linkLabel1.TabIndex = 24;
@@ -118,7 +118,7 @@
             this.eMAILDataGridViewTextBoxColumn,
             this.uSERIDDataGridViewTextBoxColumn});
             this.dataGridView1.DataSource = this.cONTACTSBindingSource;
-            this.dataGridView1.Location = new System.Drawing.Point(133, 169);
+            this.dataGridView1.Location = new System.Drawing.Point(109, 133);
             this.dataGridView1.Name = "dataGridView1";
             this.dataGridView1.Size = new System.Drawing.Size(444, 200);
             this.dataGridView1.TabIndex = 25;
@@ -151,20 +151,6 @@
             this.EMAIL.Name = "EMAIL";
             this.EMAIL.ReadOnly = true;
             // 
-            // cONTACTSBindingSource
-            // 
-            this.cONTACTSBindingSource.DataMember = "CONTACTS";
-            this.cONTACTSBindingSource.DataSource = this.dataSet1;
-            // 
-            // dataSet1
-            // 
-            this.dataSet1.DataSetName = "DataSet1";
-            this.dataSet1.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
-            // 
-            // cONTACTSTableAdapter
-            // 
-            this.cONTACTSTableAdapter.ClearBeforeFill = true;
-            // 
             // nAMEDataGridViewTextBoxColumn
             // 
             this.nAMEDataGridViewTextBoxColumn.DataPropertyName = "NAME";
@@ -188,6 +174,20 @@
             this.uSERIDDataGridViewTextBoxColumn.DataPropertyName = "USERID";
             this.uSERIDDataGridViewTextBoxColumn.HeaderText = "USERID";
             this.uSERIDDataGridViewTextBoxColumn.Name = "uSERIDDataGridViewTextBoxColumn";
+            // 
+            // cONTACTSBindingSource
+            // 
+            this.cONTACTSBindingSource.DataMember = "CONTACTS";
+            this.cONTACTSBindingSource.DataSource = this.dataSet1;
+            // 
+            // dataSet1
+            // 
+            this.dataSet1.DataSetName = "DataSet1";
+            this.dataSet1.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
+            // 
+            // cONTACTSTableAdapter
+            // 
+            this.cONTACTSTableAdapter.ClearBeforeFill = true;
             // 
             // label1
             // 
@@ -219,7 +219,7 @@
             // button2
             // 
             this.button2.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button2.Location = new System.Drawing.Point(81, 406);
+            this.button2.Location = new System.Drawing.Point(114, 339);
             this.button2.Name = "button2";
             this.button2.Size = new System.Drawing.Size(141, 33);
             this.button2.TabIndex = 29;
@@ -233,7 +233,7 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.ClientSize = new System.Drawing.Size(769, 451);
+            this.ClientSize = new System.Drawing.Size(630, 405);
             this.Controls.Add(this.button2);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.textBox1);
