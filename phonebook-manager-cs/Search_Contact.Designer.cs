@@ -35,16 +35,24 @@
             this.Exit_button2 = new System.Windows.Forms.Button();
             this.SourceCode_linkLabel1 = new System.Windows.Forms.LinkLabel();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
-            this.dataSet1 = new phonebook_manager_cs.DataSet1();
-            this.cONTACTSBindingSource = new System.Windows.Forms.BindingSource(this.components);
-            this.cONTACTSTableAdapter = new phonebook_manager_cs.DataSet1TableAdapters.CONTACTSTableAdapter();
             this.USERID = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Column2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Column1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.EMAIL = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.cONTACTSBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.dataSet1 = new phonebook_manager_cs.DataSet1();
+            this.cONTACTSTableAdapter = new phonebook_manager_cs.DataSet1TableAdapters.CONTACTSTableAdapter();
+            this.nAMEDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.cONTACTNUMBERDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.eMAILDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.uSERIDDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.label1 = new System.Windows.Forms.Label();
+            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.button1 = new System.Windows.Forms.Button();
+            this.button2 = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.dataSet1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.cONTACTSBindingSource)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dataSet1)).BeginInit();
             this.SuspendLayout();
             // 
             // SearchHeader_label1
@@ -63,7 +71,7 @@
             // 
             this.Update_button1.DialogResult = System.Windows.Forms.DialogResult.Cancel;
             this.Update_button1.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F);
-            this.Update_button1.Location = new System.Drawing.Point(250, 288);
+            this.Update_button1.Location = new System.Drawing.Point(239, 406);
             this.Update_button1.Name = "Update_button1";
             this.Update_button1.Size = new System.Drawing.Size(149, 33);
             this.Update_button1.TabIndex = 15;
@@ -74,7 +82,7 @@
             // Exit_button2
             // 
             this.Exit_button2.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F);
-            this.Exit_button2.Location = new System.Drawing.Point(416, 288);
+            this.Exit_button2.Location = new System.Drawing.Point(405, 406);
             this.Exit_button2.Name = "Exit_button2";
             this.Exit_button2.Size = new System.Drawing.Size(90, 33);
             this.Exit_button2.TabIndex = 13;
@@ -88,7 +96,7 @@
             this.SourceCode_linkLabel1.BackColor = System.Drawing.Color.Transparent;
             this.SourceCode_linkLabel1.Font = new System.Drawing.Font("Consolas", 9.75F);
             this.SourceCode_linkLabel1.LinkBehavior = System.Windows.Forms.LinkBehavior.AlwaysUnderline;
-            this.SourceCode_linkLabel1.Location = new System.Drawing.Point(527, 306);
+            this.SourceCode_linkLabel1.Location = new System.Drawing.Point(516, 424);
             this.SourceCode_linkLabel1.Name = "SourceCode_linkLabel1";
             this.SourceCode_linkLabel1.Size = new System.Drawing.Size(84, 15);
             this.SourceCode_linkLabel1.TabIndex = 24;
@@ -104,27 +112,17 @@
             this.USERID,
             this.Column2,
             this.Column1,
-            this.EMAIL});
+            this.EMAIL,
+            this.nAMEDataGridViewTextBoxColumn,
+            this.cONTACTNUMBERDataGridViewTextBoxColumn,
+            this.eMAILDataGridViewTextBoxColumn,
+            this.uSERIDDataGridViewTextBoxColumn});
             this.dataGridView1.DataSource = this.cONTACTSBindingSource;
-            this.dataGridView1.Location = new System.Drawing.Point(110, 48);
+            this.dataGridView1.Location = new System.Drawing.Point(133, 169);
             this.dataGridView1.Name = "dataGridView1";
             this.dataGridView1.Size = new System.Drawing.Size(444, 200);
             this.dataGridView1.TabIndex = 25;
             this.dataGridView1.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellContentClick);
-            // 
-            // dataSet1
-            // 
-            this.dataSet1.DataSetName = "DataSet1";
-            this.dataSet1.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
-            // 
-            // cONTACTSBindingSource
-            // 
-            this.cONTACTSBindingSource.DataMember = "CONTACTS";
-            this.cONTACTSBindingSource.DataSource = this.dataSet1;
-            // 
-            // cONTACTSTableAdapter
-            // 
-            this.cONTACTSTableAdapter.ClearBeforeFill = true;
             // 
             // USERID
             // 
@@ -153,13 +151,93 @@
             this.EMAIL.Name = "EMAIL";
             this.EMAIL.ReadOnly = true;
             // 
+            // cONTACTSBindingSource
+            // 
+            this.cONTACTSBindingSource.DataMember = "CONTACTS";
+            this.cONTACTSBindingSource.DataSource = this.dataSet1;
+            // 
+            // dataSet1
+            // 
+            this.dataSet1.DataSetName = "DataSet1";
+            this.dataSet1.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
+            // 
+            // cONTACTSTableAdapter
+            // 
+            this.cONTACTSTableAdapter.ClearBeforeFill = true;
+            // 
+            // nAMEDataGridViewTextBoxColumn
+            // 
+            this.nAMEDataGridViewTextBoxColumn.DataPropertyName = "NAME";
+            this.nAMEDataGridViewTextBoxColumn.HeaderText = "NAME";
+            this.nAMEDataGridViewTextBoxColumn.Name = "nAMEDataGridViewTextBoxColumn";
+            // 
+            // cONTACTNUMBERDataGridViewTextBoxColumn
+            // 
+            this.cONTACTNUMBERDataGridViewTextBoxColumn.DataPropertyName = "CONTACT_NUMBER";
+            this.cONTACTNUMBERDataGridViewTextBoxColumn.HeaderText = "CONTACT_NUMBER";
+            this.cONTACTNUMBERDataGridViewTextBoxColumn.Name = "cONTACTNUMBERDataGridViewTextBoxColumn";
+            // 
+            // eMAILDataGridViewTextBoxColumn
+            // 
+            this.eMAILDataGridViewTextBoxColumn.DataPropertyName = "EMAIL";
+            this.eMAILDataGridViewTextBoxColumn.HeaderText = "EMAIL";
+            this.eMAILDataGridViewTextBoxColumn.Name = "eMAILDataGridViewTextBoxColumn";
+            // 
+            // uSERIDDataGridViewTextBoxColumn
+            // 
+            this.uSERIDDataGridViewTextBoxColumn.DataPropertyName = "USERID";
+            this.uSERIDDataGridViewTextBoxColumn.HeaderText = "USERID";
+            this.uSERIDDataGridViewTextBoxColumn.Name = "uSERIDDataGridViewTextBoxColumn";
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Location = new System.Drawing.Point(130, 62);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(35, 13);
+            this.label1.TabIndex = 26;
+            this.label1.Text = "Name";
+            // 
+            // textBox1
+            // 
+            this.textBox1.Location = new System.Drawing.Point(220, 59);
+            this.textBox1.Name = "textBox1";
+            this.textBox1.Size = new System.Drawing.Size(248, 20);
+            this.textBox1.TabIndex = 27;
+            this.textBox1.TextChanged += new System.EventHandler(this.textBox1_TextChanged);
+            // 
+            // button1
+            // 
+            this.button1.Location = new System.Drawing.Point(297, 85);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(75, 23);
+            this.button1.TabIndex = 28;
+            this.button1.Text = "Search";
+            this.button1.UseVisualStyleBackColor = true;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
+            // 
+            // button2
+            // 
+            this.button2.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button2.Location = new System.Drawing.Point(81, 406);
+            this.button2.Name = "button2";
+            this.button2.Size = new System.Drawing.Size(141, 33);
+            this.button2.TabIndex = 29;
+            this.button2.Text = "Delete contact";
+            this.button2.UseVisualStyleBackColor = true;
+            this.button2.Click += new System.EventHandler(this.button2_Click);
+            // 
             // Search_Contact
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.ClientSize = new System.Drawing.Size(623, 342);
+            this.ClientSize = new System.Drawing.Size(769, 451);
+            this.Controls.Add(this.button2);
+            this.Controls.Add(this.button1);
+            this.Controls.Add(this.textBox1);
+            this.Controls.Add(this.label1);
             this.Controls.Add(this.dataGridView1);
             this.Controls.Add(this.SourceCode_linkLabel1);
             this.Controls.Add(this.Exit_button2);
@@ -174,8 +252,8 @@
             this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.Search_Contact_FormClosing);
             this.Load += new System.EventHandler(this.Search_Contact_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.dataSet1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.cONTACTSBindingSource)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dataSet1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -195,5 +273,13 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn Column2;
         private System.Windows.Forms.DataGridViewTextBoxColumn Column1;
         private System.Windows.Forms.DataGridViewTextBoxColumn EMAIL;
+        private System.Windows.Forms.DataGridViewTextBoxColumn nAMEDataGridViewTextBoxColumn;
+        private System.Windows.Forms.DataGridViewTextBoxColumn cONTACTNUMBERDataGridViewTextBoxColumn;
+        private System.Windows.Forms.DataGridViewTextBoxColumn eMAILDataGridViewTextBoxColumn;
+        private System.Windows.Forms.DataGridViewTextBoxColumn uSERIDDataGridViewTextBoxColumn;
+        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Button button2;
     }
 }

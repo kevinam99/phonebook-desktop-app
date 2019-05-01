@@ -84,6 +84,8 @@ namespace phonebook_manager_cs
                     OracleCommand cmd = new OracleCommand(sql, con);
                     cmd.CommandType = CommandType.Text;
                     cmd.ExecuteNonQuery();
+                    dataGridView1.Refresh();
+
                     MessageBox.Show("Successfully deleted contact '");
                 }
                 else
