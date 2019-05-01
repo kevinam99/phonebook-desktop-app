@@ -59,7 +59,7 @@ namespace phonebook_manager_cs
         {
             try
             {
-                if (!((textBox1.Text == "") && (textBox2.Text == "") &&(textBox4.Text == "")))
+                if (!((string.IsNullOrEmpty(textBox1.Text) && (string.IsNullOrEmpty(textBox2.Text)) &&(string.IsNullOrEmpty(textBox4.Text) ))))
                 {
                     string name = textBox1.Text;
                     string number = textBox2.Text;
